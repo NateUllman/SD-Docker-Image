@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 70bcf17f16d846f458dced6dc228b461
+  - enabled: 1
+    path: Assets/Scenes/InfoScene.unity
+    guid: 7b5feb62ae0106545b60ac50dd58f6bc
+  - enabled: 1
+    path: Assets/Scenes/Asteroid.unity
+    guid: dc3b840223a31c840b6ff15ef24e5c62
+  - enabled: 1
+    path: Assets/Scenes/Asteroide.unity
+    guid: cd0aebc05bfec5145850b2d3c7c90157
+  - enabled: 0
+    path: Assets/Scenes/Asteroidi.unity
+    guid: 9274d38530ad55c4681ddb456ac298a1
+  - enabled: 0
+    path: Assets/Scenes/Elevation.unity
+    guid: d4dab46b950f3dc478acbc1bd4ea593d
+  m_configObjects: {}
