@@ -62,9 +62,9 @@ jobs:
   
 	- stage: build
     
-		env: BUILD_TARGET=StandaloneWindows64 IMAGE_NAME=gableroux/unity3d:2019.3.7f1-windows
+		env: BUILD_TARGET=StandaloneWindows64 IMAGE_NAME=NateUllman/unity3d:2019.3.12f1-windows
     
-		script: "chmod +x ./ci/docker_build.sh &&./ci/docker_build.sh"
+		script: "chmod +x ./ci/build.sh &&./ci/docker_build.sh"
     
 		addons:
       artifacts:
@@ -73,6 +73,10 @@ jobs:
 		paths:
         - "./Builds/"
   
+		deploy: provider: releases 
+			api_key: e2e1604a8bdc35a260be2a7dec83f1b3f14e9fa6 
+			file: StandAloneWinSD.zip
+			skip_cleanup: true
 	- stage: build
     env: BUILD_TARGET=WebGL IMAGE_NAME=gableroux/unity3d:2019.3.7f1-webgl
     script: "chmod +x ./ci/docker_build.sh && ./ci/docker_build.sh"
